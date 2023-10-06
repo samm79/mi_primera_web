@@ -1,4 +1,9 @@
-let nombre="Samuel";
-//alert(nombre, ", Hola este es mi Javascript");
+let menu_responsive = document.querySelector(".checkbtn");
 
-console-console.log(nombre);
+menu_responsive.onclick = function () {
+  navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+};
+
+let nombre ="Samuel";
+console.log(nombre);
