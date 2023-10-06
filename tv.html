@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La nueva Television</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: 'roboto', sans-serif;
+        }
+        h1{ font-size: 3.5em;}
+        h2{ font-size: 2.7em;}
+        h3{ font-size: 2em;}
+        p{ font-size: 1.25em;}
+        ul{ list-style: none;}
+        li{ font-size: 1.25em;}
+        
+        button{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 10px green;
+            color: white;
+            background-color: blueviolet;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        .container{
+            max-width: 1400px;
+            margin: auto;
+        }
+        .color-acento{ color: blueviolet;}
+
+        header{
+            background-color: rgb(240, 236, 231);
+        }
+        header .logo{
+            margin: 0;
+            padding: 25px 30px;
+            font-weight: bold;
+            color:blueviolet;
+            font-size: 1.6em;
+        }
+        header .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        header a{
+            padding: 5px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        header a:hover{
+            color: blueviolet;
+        }
+        #hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 90vh;
+            color:white;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("img/iptv1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        #hero h1{
+            color: white;
+        }
+        #somos-proya{
+
+        }
+        #somos-proya .container{
+            text-align: center;
+            padding: 200px 12px;
+        }
+        footer{
+            background-color: rgb(100,100,100);
+        }
+        footer p{
+            margin: 0;
+            padding: 12px;
+            color: rgb(100,100,100);
+        }
+        footer .container{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        @media (min-width: 720px){
+            header .container{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            header nav{
+                flex-direction: row;
+                padding-bottom: 0;
+                padding-right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <p class="logo">TV</p>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="solicitud">Solicitud</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <h2>TV</h2>
+        <button>Solicita servicio</button>
+    </section>
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <h2>La nueva <span class="color-acento">Television</span></h2>
+            <p>es facil de entrar, facil de usar</p>
+        </div>
+    </section>
+    <footer>
+        <h3>La nueva television por internet</h3>
+        <p>Perico Jujuy Argentina 2023</p>
+    </footer>
+</body>
+</html>

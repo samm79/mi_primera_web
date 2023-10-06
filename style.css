@@ -1,0 +1,108 @@
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+nav ul li a{
+    color:white;
+    }
+
+div{
+    padding: 12px;
+}
+
+div img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+header{
+    padding: 12px;
+     background-color: cadetblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: 0;
+    left: 0;
+}
+header h1.logo {
+    font-size: 35px;
+    font-weight: bold;
+    /* Agregar propiedad de display */
+    display: inline-block;
+    /* Agregar propiedad de line-height */
+    line-height: 50px;
+    /*padding: 0 20px;*/
+  }
+header nav{
+    float: right;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    line-height: 50px;
+}
+main{
+    padding: 12px;
+    height: 330px;
+    background-color: rgb(255, 175, 51);
+}
+
+
+main img{
+    
+}
+
+div {
+    /*width: 50%;*/
+    height: 300px;
+    float: left;
+}
+footer{
+    clear: both;
+    padding: 12px;
+    background-color: cadetblue;
+}
+
+footer img{
+    width: 20%;
+    height: 20%;
+}
+
+footer foot{
+    float: left;
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40PX;
+    cursor: pointer;
+    display: none
+    ;
+}
